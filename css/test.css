@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    text-align: center;
+    
+}
+
+.pop_up1, .pop_up2, .pop_up3, .pop_up4, .pop_up5{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+    display: none;
+}
+.pop_up1.active , .pop_up2.active, .pop_up3.active, .pop_up4.active, .pop_up5.active{
+    display: block;
+}
+
+.pop_up_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+/*стилизация окна всплывающего здесь*/
+.pop_up_body1, .pop_up_body2, .pop_up_body3, .pop_up_body5{
+    margin: auto;
+    width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+.pop_up_body4{
+    margin: auto;
+    width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+    position: relative;
+}
+.pop_up_close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.open_pop_up1, .open_pop_up2, .open_pop_up3, .open_pop_up4, .open_pop_up5{
+    text-decoration: none;
+    color: black;
+}
